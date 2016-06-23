@@ -7,6 +7,12 @@
 	background: #4a89ca;
 }
 
+.button-ghost{
+	background-color: transparent;
+	border: 2px solid #4a89ca;
+	color: #4a89ca;
+}
+
 /*TRANSITION STYLES*/
 .button{
 	transition-duration: 0.5s;
@@ -21,6 +27,25 @@
 	background: #a33830;
 }
 
+.button-ghost{
+	transition-duration: .4s, .8s, .10s;
+	transition-property: background, border-radius, color;
+}
+
+.button-ghost:hover{
+	background: #4a89ca;
+	border-radius: 4px;
+	color: #fff;
+}
 /* ================================= 
   Photo Overlay Transitions
 ==================================== */
+.photo-overlay{
+	transition-duration: .5s;
+	transition-property: opacity;
+	cursor: pointer;
+}
+
+.photo-overlay:hover{
+	opacity: 0;
+}

@@ -81,7 +81,7 @@ p {
 .photo-container img {
  	max-width: 100%;
 }
-.button {
+.button, .btn {
 	width: 70%;
 	font-weight: 700;
 	display: block;
