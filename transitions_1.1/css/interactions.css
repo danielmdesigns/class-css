@@ -1,7 +1,6 @@
 /* ================================= 
   Button Transitions
 ==================================== */
-
 .button {
 	color: #fff;
 	background: #4a89ca;
@@ -27,6 +26,8 @@
 	background: #a33830;
 }
 
+
+
 .button-ghost{
 	transition-duration: .4s, .8s, .10s;
 	transition-property: background, border-radius, color;
@@ -37,6 +38,8 @@
 	border-radius: 4px;
 	color: #fff;
 }
+
+
 /* ================================= 
   Photo Overlay Transitions
 ==================================== */
