@@ -28,7 +28,7 @@ h2 {
 h3 {
 	font-size: 1.3em;
 	line-height: 1.25em;
-	margin-top: .85em;
+	margin-top: 0em;
 	margin-bottom: .5em;
 }
 p {
@@ -42,6 +42,7 @@ p {
 ==================================== */
 
 /* ---- Layout Containers ---- */
+
 .container {
 	width: 94.02985075%;
 	max-width: 1260px;
@@ -56,8 +57,8 @@ p {
 	text-align: center;
 	margin-bottom: 4em;
 }
-
 /* ---- Page Elements ---- */
+
 .name {
 	font-size: 1.65em;
 	font-weight: 800;
@@ -75,23 +76,36 @@ p {
 .photo {
 	position: relative;
 	line-height: 0;
-	margin-bottom: 2em;
 	overflow: hidden;
 }
 .photo-container img {
  	max-width: 100%;
 }
 .button {
-	width: 70%;
+	color: #fff;
+	width: 75%;
 	font-weight: 700;
 	display: block;
 	text-decoration: none;
 	text-transform: uppercase;
-	padding: 10px 0;
-	margin: auto;
+	background: rgba(74,137,202, .65);
+	padding: 22px 0;
+	border-radius: .5em;
+	margin: 0;
+	position: relative;
 }
-
+.btn-icon {
+	opacity: 0;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background: url('../img/download.svg');
+	position: absolute;
+	left: 45%;
+	top: 27%;
+}
 /* ---- Photo Overlay ---- */
+
 .photo-overlay {
 	color: #fff;
 	position: absolute;
@@ -126,7 +140,7 @@ p {
 }
 @media (min-width: 769px) {
 	.container {
-		padding: 0 2.25em 4em;
+		padding: 0 2.25em 2em;
 	}
 	.photo-container {
 		width: 48%;
