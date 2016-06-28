@@ -1,0 +1,118 @@
+div {
+  height: 100px;
+  width: 100px;
+  border-radius: 4px;
+  margin: 30px;
+  display: inline-block;
+  cursor: pointer; }
+
+.rotate {
+  background-color: tomato; }
+
+.rotate-static {
+  transform: rotate(-15deg); }
+
+.rotate-hover:hover {
+  transform: rotate(45deg); }
+
+.rotate-transition {
+  transition: transform 1s; }
+  .rotate-transition:hover {
+    transform: rotate(45deg); }
+  .rotate-transition:active {
+    transform: rotate(2turn); }
+
+.skew {
+  background-color: dodgerblue; }
+
+.skewX {
+  transform: skewX(-10deg); }
+
+.skewY {
+  transform: skewY(10deg); }
+
+.skew-hover {
+  transition: transform 0.5s; }
+  .skew-hover:hover {
+    transform: skewX(-20deg); }
+
+.scale {
+  background-color: darkseagreen; }
+
+.scale-static {
+  transform: scale(1.3); }
+
+.scale-hover {
+  transition: transform 0.5s; }
+  .scale-hover:hover {
+    transform: scale(1.3); }
+
+.scale-2x {
+  transition: transform 0.5s; }
+  .scale-2x:hover {
+    transform: scale(2); }
+
+.orgin {
+  background-color: mediumorchid; }
+
+.scale-topLeft {
+  transform-origin: 0 0;
+  transition: transform 0.5s; }
+  .scale-topLeft:hover {
+    transform: scale(1.2); }
+
+.rotate-topLeft {
+  transform-origin: 0 0;
+  transition: transform 0.5s; }
+  .rotate-topLeft:hover {
+    transform: rotate(45deg); }
+
+.skew-topLeft {
+  transform-origin: 0 0;
+  transition: transform 0.5s; }
+  .skew-topLeft:hover {
+    transform: skewX(15deg); }
+
+.translate {
+  background-color: lightsalmon; }
+
+.translate-left {
+  transition: transform 0.5s; }
+  .translate-left:hover {
+    transform: translateX(50px); }
+
+.translate-right {
+  transition: transform 0.5s; }
+  .translate-right:hover {
+    transform: translateX(-50px); }
+
+.translate-top {
+  transition: transform 0.5s; }
+  .translate-top:hover {
+    transform: translateY(-50px); }
+
+.combine {
+  background-color: deepskyblue; }
+
+.scale-rotate {
+  transition: transform 0.5s; }
+  .scale-rotate:hover {
+    transform: rotate(20deg) scale(1.1); }
+
+.skew-translate {
+  transition: transform 0.5s; }
+  .skew-translate:hover {
+    transform: skewX(12deg) translateY(20px); }
+
+.skew-scale {
+  transition: transform 0.5s; }
+  .skew-scale:hover {
+    transform: skewY(12deg) scale(1.1); }
+
+.timing {
+  background-color: Peru; }
+
+.custom-timing {
+  transition: transform 0.3s cubic-bezier(0.77, -0.33, 0.29, 1.37); }
+  .custom-timing:hover {
+    transform: scale(1.2) rotate(30deg); }
