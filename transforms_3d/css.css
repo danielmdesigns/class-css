@@ -1,16 +1,19 @@
 /* 3d Flip Test X */
 .container {
-  perspective: 700px; }
+  perspective: 700px;
+  perspective-orgin: 80% 50%;
+  margin: 0 auto;
+  text-align: center; }
 
 .flip-animation {
   display: inline-block;
   position: relative;
   /* */
-  transition: transform 1s cubic-bezier(0.77, -0.33, 0.29, 1.37);
+  transition: transform 3s cubic-bezier(0.77, -0.33, 0.29, 1.37);
   transform-style: preserve-3d; }
   .flip-animation:hover {
     cursor: pointer;
-    transform: rotateY(-180deg); }
+    transform: rotate3d(1, 0, 0, 180deg); }
 
 .side-a, .side-b {
   backface-visibility: hidden; }
@@ -29,28 +32,4 @@
   bottom: 0;
   right: 0;
   z-index: -1;
-  transform: rotateY(180deg); }
-
-/*Other Examples */
-.box {
-  height: 100px;
-  width: 100px;
-  border-radius: 4px;
-  margin: 30px;
-  perspective: 700px; }
-
-.perspectiveY {
-  background-color: tomato;
-  transform: rotateY(55deg);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); }
-
-.perspectiveX {
-  background-color: tomato;
-  transform: rotateX(30deg);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); }
-
-.rotateOnHover {
-  cursor: pointer;
-  transition: transform 1s ease-out; }
-  .rotateOnHover:hover {
-    transform: rotateY(-180deg); }
+  transform: rotateX(180deg); }
