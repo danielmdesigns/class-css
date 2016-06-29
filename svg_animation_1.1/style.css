@@ -1,0 +1,50 @@
+/*BASE */
+body {
+  padding-top: 5em; }
+
+svg {
+  width: 33.32%;
+  float: left; }
+
+/*TRANSITIONS */
+.gear-background,
+.hammer-background,
+.heart-background {
+  cursor: pointer;
+  transition: 0.3s ease-out; }
+
+.gear-background:hover {
+  fill: #3881CC; }
+
+.heart-background:hover {
+  fill: #FF5E5E; }
+
+.hammer-background {
+  stroke: #FEE16E; }
+  .hammer-background:hover {
+    fill: #FEAE6E;
+    stroke-width: 8; }
+
+/*ROTATING && TRANSFORM */
+.gear-icon,
+.hammer-icon,
+.heart-icon {
+  transform-origin: 200px 50px; }
+
+.gear-icon {
+  transition: transform 0.4s ease-out; }
+
+.gear:hover .gear-icon {
+  transform: rotate(45deg) scale(1.3); }
+
+.hammer-icon {
+  transition: transform 0.3s ease-out; }
+
+.hammer:hover .hammer-icon {
+  transform: rotate(45deg); }
+
+.heart-icon {
+  transition: transform 0.2s ease-out; }
+
+.heart:hover .heart-icon {
+  transform: scale(1.3); }
