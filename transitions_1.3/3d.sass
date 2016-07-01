@@ -1,0 +1,67 @@
+/* BASE STYLES */
+body
+	padding-top: 50px
+	background: #f7f7f7
+	//apply perspecitive to body of page, tells children elements that they're now ready to move in a 3d space
+	//adjusts how far or close the perspective is
+	perspective: 800px
+	//vanishing point of 3d space. centered by default
+	//perspective-origin: 100% 100%
+
+.wrap
+	position: relative
+	margin: 0 auto
+	width: 250px
+	height: 350px
+	cursor: pointer
+	div
+		width: 100%
+		height: 100%
+		border-radius: 10px
+		background-position: 50% 50%
+		background-size: 150px
+		background-repeat: no-repeat
+		box-shadow: inset 0 0 45px rgba(255,255,255,0.3), 0 12px 20px -10px rgba(0,0,0,0.4)
+		color: #FFF
+		text-align: center
+		text-shadow: 0 1px rgba(0,0,0,0.3)
+		font: bold 3em sans-serif
+		line-height: 350px
+
+.side-a
+	background: #498FBC
+	
+.side-b
+	background: #33363b
+
+
+/*puts side b, behind side a*/
+.wrap div
+	position: absolute
+	/*hides backside of element in 3d space*/
+	backface-visibility: hidden
+
+.side-a
+	z-index: 100
+.side-b
+	/*rotates the backside card around*/
+	transform: rotateY(-180deg)
+.wrap
+	transition: transform 1s ease-in-out
+	//shares 3d space with child elements
+	transform-style: preserve-3d
+.wrap:hover
+	/*Rotate*/
+	//transform: rotateX(45deg) //top bottom
+	transform: rotateY(180deg) //left right
+	//transform: rotateZ(45deg) //clockwise/counterclockwise
+	/*transform: rotate3d(x,y,z,deg)*/
+	//transform: rotate3d(1,1,1,45deg)
+	
+	/*Translate*/
+	//transform: translateZ(200px)
+	//transform: translateY(200px)
+	//transform: translate3d(100px, 50px, 150px)
+	
+	/*Scale*/
+	//transform: scaleZ(2) translateZ(100px) //same as translateZ
