@@ -1,0 +1,85 @@
+/* Default Styles */
+body
+	background: #f0fcff url("img/island.png") repeat-x 100% -460px
+	background-size: 780px
+.boat
+	width: 380px
+	position: absolute
+	top: 40%
+	left: 35%
+	&:img
+		width: 100%
+	&::after
+		content: ""
+		display: block
+		width: 120px
+		height: 120px
+		background: url("img/steam.png") no-repeat
+		background-size: 120px
+		position: absolute
+		top: -25%
+		left: 5%
+.mike
+	width: 180px
+	position: absolute
+	top: 55%
+	left: -15%
+	transform: rotateZ(-5deg)
+
+
+//.box
+//	width: 100px
+//	height: 100px
+//	background: tomato
+//	&:hover
+//		transform: translate(-15%, -35%) rotateZ(20deg)
+
+/*Animation Styles*/
+.boat
+	animation: rock-the-boat 3s ease-out infinite
+	//the numbers of cycles the animation will play
+	//animation-iteration-count: infinite
+@keyframes rock-the-boat
+	//0%
+		transform: rotate(0) translateY(0)
+	50%
+		/*rotate is left to right, translate is the up & down, bobbing motion*/
+		transform: rotate(-5deg) translateY(-10px)
+	//100%
+		transform: rotate(0) translateY(0)
+
+.boat::after
+	opacity: 0
+	animation: steam 4s 2s ease-in-out infinite
+@keyframes steam
+	//0%
+		opacity: 0
+	40%, 60%
+		opacity: 1
+	100%
+		/*translate just moves the object from its normal spot*/
+		/*rotateZ rotates the object clockwise*/
+		transform: translate(-15%, -35%) rotateZ(20deg)
+
+body
+	animation: background-move 8s ease-out forwards
+	//animation-direction: alernate-reversed
+	//forwards makes sure that constant animation does not reset itself
+	//animation-fill-mode: forwards
+	animation-play-state: paused
+@keyframes background-move
+	0%
+		background-position: 100% -560px
+	100%
+		background-position: -350% -460px
+
+.mike
+	animation: mike-move 6s 6s ease-out forwards, mike-float 3.2s infinite
+@keyframes mike-move
+	100%
+		left: 12%
+@keyframes mike-float
+	50%
+		transform: rotateZ(-5deg) translateY(-5px)
+	
+	
