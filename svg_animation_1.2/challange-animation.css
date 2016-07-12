@@ -1,0 +1,27 @@
+/* Sass Document */
+@keyframes slide {
+  50% {
+    transform: translate3d(0, -10px, 0); }
+  80% {
+    transform: translate3d(0, 10px, 0); }
+  100% {
+    transform: translate3d(0, 0, 0); } }
+@keyframes grow {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.15) rotate(-5deg);
+    opacity: 1; }
+  100% {
+    transform: scale(1); } }
+@keyframes offset {
+  60% {
+    stroke-opacity: 1; }
+  100% {
+    stroke-dashoffset: 0; } }
+.star {
+  animation: slide 1s 0.2s ease-out; }
+  .star:nth-of-type(2) {
+    animation-delay: 0.5s; }
+  .star:nth-of-type(3) {
+    animation-delay: 0.75s; }

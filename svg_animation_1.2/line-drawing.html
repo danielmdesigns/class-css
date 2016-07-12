@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Untitled Document</title>
+</head>
+<style>
+  svg{
+    display: block;
+    margin: 2em auto 0;
+    width: 100%;
+  }
+  .logo{
+    stroke: black;
+    stroke-width: 2;
+    stroke-dasharray: 1310;
+    stroke-dashoffset: 1310;
+    animation: offset 5s linear forwards, fill .8s 5s forwards;
+  }
+  @keyframes offset {
+    100%{
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes fill{
+    100%{
+      fill: black;
+    }
+  }
+</style>
+<body>
+
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 960 560" style="enable-background:new 0 0 960 560;" xml:space="preserve">
+  <path class="logo" fill="transparent" d="M542,401c0-55.4,44.1-100.5,99.2-102c1.6,0,2.8-1.4,2.8-3V70c0-5.5-4.5-10-10-10H312c-5.5,0-10,4.5-10,10v322
+	c0,5.5,4.5,10,10,10h230C542,401.8,542,401.3,542,401z"/>
+</svg>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+/* Sass Document */
+@keyframes grow
+  0%
+    transfrom: scale(0)
+  30%
+    transform: scale(1.1)
+  60%
+    transform: scale(0.9)
+.badge *
+  //transform-origin: 50% 50%
+  /* To get a pixel value for transform-origin, which makes the animation start from the center of the design, use the CX & CY values from the HTML */
+  transform-origin: 180px 180px
+.outer,
+.inner,
+.inline
+  animation: grow 1s ease-out backwards
+  
+.inner
+  animation-delay: .1s
+    
+.inline
+  animation-delay: .15s
+    
+    
+@keyframes turn
+  0%
+    transform: rotate(0) scale(0)
+    opacity: 0
+  60%
+    transform: rotate(375deg) scale(1.1)
+  80%
+    transform: rotate(355deg) scale(0.9)
+  100%
+    transform: rotate(360deg) scale(1)
+  
+.star
+  animation: turn 1s ease-out backwards
+  
+  
+  
+@keyframes pulse
+  50%
+    transform: scale(1.1)
+  
+.star circle
+  animation: pulse .7s 1.0s
+  &:nth-of-type(2)
+    animation-delay: 1.1s
+  &:nth-of-type(3)
+    animation-delay: 1.2s
+  &:nth-of-type(4)
+    animation-delay: 1.3s
+  &:nth-of-type(5)
+    animation-delay: 1.4s
+  
+
