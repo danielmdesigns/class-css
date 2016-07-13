@@ -1,0 +1,11 @@
+/* Use index to compile ALL of your partial SASS files. */
+/* Sass Document */
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid red; }
+
+/* Extends are repeating styles. By using extends, we avoid calling the same styles over & over. */
+.container {
+  text-align: center; }
