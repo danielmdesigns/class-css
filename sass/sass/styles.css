@@ -1,12 +1,9 @@
 /* Importing the index files of each partials, so that you don't have to individually include each partial file. */
-/* Sass Document */
-/* Sass Document */
-html {
-  font-family: sans-serif; }
-
+/*Partials are all saved in index files. Then, we load all the index files in one sass file. */
+/* BASE INDEX */
 /* Sass Document */
 header {
-  color: tomato; }
+  color: dodgerblue; }
 
 main {
   color: aquamarine; }
@@ -14,14 +11,24 @@ main {
 footer {
   color: #333; }
 
+/* Sass Document */
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
 /* Use index to compile ALL of your partial SASS files. */
 /* Sass Document */
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
-  border: 1px solid red; }
+  border: 1px solid tomato; }
 
-/* Extends are repeating styles. By using extends, we avoid calling the same styles over & over. */
-.container {
-  text-align: center; }
+/* Sass Document */
+button {
+  border: 0;
+  background-color: firebrick;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px; }
+  button:hover {
+    background-color: #871a1a; }
