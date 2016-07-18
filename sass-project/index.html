@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Sass Project</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Droid+Sans">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic">
+</head>
+<body>
+
+<div id="container">
+  <header>
+    <h1 class="brand">The Sass Project</h1>
+    <nav>
+      <a href="#">About</a>
+      <a href="#">Feed</a>
+    </nav>
+  </header>
+  <section>
+  	<article>
+      <h2>Install Sass</h2>
+      <time>Step 1—</time>
+      <p>To begin using Sass with using the terminal, type cmd-spacebar and type terminal. Once in the terminal we need to do 1 <em>of</em> 2 things. If this is the first time using Sass on this machine, we need to install Sass. Otherwise, we need to update it. First timers, please type <code>sudo gem install sass</code> into the command line. This will go out and find the gem sass and install it on your computer. It will ask you for your password, this is just your computers login password.</p>
+      <p>For those of us who have already installed Sass and need to get going on a project, update Sass by typing <code>sudo gem update sass</code>.</p>
+      <p>To check the current version of Sass or to simply make sure that it's installed, type <code>sass -v</code></p>
+    </article>
+    <article>
+      <h2>Set up a Project</h2>
+      <time>Step 2—</time>
+      <p>To get the Sass compiler up and running, watching our project, we will need to use the <code>--watch</code> command, so that it can begin looking for changes in our project.</p>
+      <p>First things first! We need to make sure that we're in the correct directory of our project. Here are a couple helpful commands in order to get us to that point;</p>
+      <ul>
+        <li>Change directory to desktop &gt; project-name <code>cd desktop/project-name</code></li>
+        <li>If you're already on the desktop its even more simple, just <code>cd project-name</code></li>
+        <li>Other helpful command line shortcuts are; <code>pwd</code>, which shows you where you are at...</li>
+        <li>...and <code>ls</code> will show me what files are in the current directory im in.</li>
+        <li>To stop watching type <code>Ctrl-C</code></li>
+      </ul>
+      <p>Once you know you're in the correct file of that project that you're going to be working in, it's probably best to keep Sass && CSS in separate folders and/or directories. Therefore, we'll want to use the command <code>sass --watch sass:css</code> that will say "hey Sass, watch all the files in the 'sass' folder for changes and update the stylesheet in the css directory." A few other cool tips to note are;</p>
+      <ul>
+      	<li>you can start watching a file <em>before</em> a file has been created or <em>after</em> a file has been created.</li>
+        <li>also, a folder for css doesn't need to be created intially. If you didn't want to create the folder before hand, once you start watching a file and typing the <code>sass --watch sass:css</code> command, it will auto generate a css directory w/ the css file once a change has been made.</li>
+        <li><strong>Important:</strong> Dw will ask you anytime the Sass file has been changed that the css file has been modified outside of Dw and if you would like to update/save those changes. You want to make sure that you click <code>Yes</code> and check for it to <code>Stop asking</code> you.</li>
+      </ul>
+      <p>Credit to the website that I'm getting the design from to practice, <a href="http://codepen.io/Xhoz/pen/vGaovO?editors=0100" target="_blank">here</a></p>
+    </article>
+  </section>
+</div>
+
+</body>
+</html>

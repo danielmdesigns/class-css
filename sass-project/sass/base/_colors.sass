@@ -1,0 +1,25 @@
+/* base > color */
+
+$text-color: #505050
+$lite-gray: #ddd
+$brand-color: #2b2b2b
+$link-color: #97a1aa
+$code: cornsilk
+
+body, article
+	color: $text-color
+	
+header
+	border-bottom: $lite-gray
+	
+h1.brand
+	color: $brand-color
+	
+nav a, a, nav a:visited, a:visited
+	color: $link-color
+	&:hover
+		color: darken($link-color, 10%)
+		
+code
+	background-color: $code
+	
