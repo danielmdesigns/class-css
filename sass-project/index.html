@@ -40,9 +40,12 @@
       </ul>
       <p>Once you know you're in the correct file of that project that you're going to be working in, it's probably best to keep Sass && CSS in separate folders and/or directories. Therefore, we'll want to use the command <code>sass --watch sass:css</code> that will say "hey Sass, watch all the files in the 'sass' folder for changes and update the stylesheet in the css directory." A few other cool tips to note are;</p>
       <ul>
-      	<li>you can start watching a file <em>before</em> a file has been created or <em>after</em> a file has been created.</li>
-        <li>also, a folder for css doesn't need to be created intially. If you didn't want to create the folder before hand, once you start watching a file and typing the <code>sass --watch sass:css</code> command, it will auto generate a css directory w/ the css file once a change has been made.</li>
+      	<li>You can start watching a file <em>before</em> a file has been created or <em>after</em> a file has been created.</li>
+        <li>Also, a folder for css doesn't need to be created intially. If you didn't want to create the folder before hand, once you start watching a file and typing the <code>sass --watch sass:css</code> command, it will auto generate a css directory w/ the css file once a change has been made.</li>
+        <li>Enhance and compress your compiled code easily by using the command <code>sass --watch --style compressed sass:css</code></li>
+        <li>Likewise, you can watch just a single file by typing <code>sass --watch --style compressed style.sass:style.css</code></li>
         <li><strong>Important:</strong> Dw will ask you anytime the Sass file has been changed that the css file has been modified outside of Dw and if you would like to update/save those changes. You want to make sure that you click <code>Yes</code> and check for it to <code>Stop asking</code> you.</li>
+        <li>Another useful tip is that the command line sometimes just kinda goes invisible. I'm not really sure what that is, but Sass is still compiling and working. If you type <code>shift-command-period</code> you can check where you're at <code>pwd</code> and start typing commands again =)</li>
       </ul>
       <p>Credit to the website that I'm getting the design from to practice, <a href="http://codepen.io/Xhoz/pen/vGaovO?editors=0100" target="_blank">here</a></p>
     </article>
