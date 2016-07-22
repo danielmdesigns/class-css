@@ -1,0 +1,91 @@
+/* Sass Document */
+@import "colors"
+
+*, *::after, *::before
+	box-sizing: border-box
+
+*
+	padding: 0
+	margin: 0
+	
+body
+	font-size: 1.3rem
+	font-family: sans-serif
+
+a
+	text-decoration: none
+	color: $white
+	
+	
+/* Tool Tip */
+section
+	width: 100%
+	height: 100vh
+	display: table
+	
+section .center
+	display: table-cell
+	vertical-align: middle
+	text-align: center
+	
+.trigger
+	position: relative
+	background: $red
+	display: inline-block
+	width: 200px
+	height: 60px
+	border-radius: 5em
+	box-shadow: 0 2px 20px rgba(0,0,0,0.2)		
+	&:hover strong
+		top: -100%
+	&:hover i
+		top: 0
+	&::before,
+	&::after
+		position: absolute
+		opacity: 0  /*still in element flow, just not visible*/
+		visibility: hidden  /*take this element out of the flow completely. aka hide*/
+		transition: opacity .3s, visibility .3s
+	&::before
+		content: "File Size 50m"
+		width: 140px
+		height: 60px
+		line-height: 60px
+		background: $blue
+		border-radius: .25rem
+		bottom: 90px
+		left: calc(50% - 70px)
+	&::after
+		content: ""
+		width: 0
+		height: 0
+		border: 10px solid transparent
+		border-top-color: $blue
+		left: calc(50% - 10px)
+		bottom: 70px
+	&:hover::before,
+	&:hover::after
+		opacity: 1
+		visibility: visible
+
+	
+span, strong, i
+	position: absolute
+	width: 100%
+	height: 100%
+	left: 0
+	
+strong, i
+	transition: top .3s
+
+/*hiding the icon && button text outside of the span tag*/
+span
+	overflow: hidden
+	
+strong
+	line-height: 60px
+	top: 0
+	
+i
+	margin: 20px auto
+	top: 100%
