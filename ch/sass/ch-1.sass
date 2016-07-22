@@ -1,0 +1,21 @@
+/* Sass Document */
+@import "colors"
+
+span
+	display: block
+	width: 100px
+	height: 100px
+	background: $green
+	margin: 4em auto
+	border-radius: 4px
+	/*TRANSITION && ANIMATION*/
+	/*transition: background 1s .5s ease-in-out*/ /*short hand notation*/
+	transition-property: background, width, height
+	transition-duration: .5s
+	/*transition-delay: .5s*/ /*how much pause BEFORE the transition begins*/
+	transition-timing-function: ease-in-out
+	
+span:hover
+	background: $red
+	width: 125px
+	height: 125px
