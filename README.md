@@ -13,9 +13,9 @@ Those of you who have already installed Sass but need to get up && running on a 
 
 Finally, if you would just like to check the current version or simply make sure it's installed, type ```sass -v``` for version.
 
-1. Intial Installation of Sass ```sudo gem install sass```
-2. Update Sass ```sudo gem update sass```
-3. Check Sass version ```sass -v```
+1. ```sudo gem install sass``` - Intial Installation of Sass 
+2. ```sudo gem update sass``` - Update Sass 
+3. ```sass -v``` - Check Sass version
 
 
 ###Using Sass
@@ -26,17 +26,26 @@ To get the Sass compiler up && running, watching our project, we will need to us
 
 First things, first. We need to make sure we're in the correct directory of or project. Here are some helpful commands in order to get us to that point.
 
-1. Change directory to desktop > folder ```cd desktop/project-name```
-2. If you're already on desktop, simply ```cd project-name```
-3. Shows you where you're at ```pwd```
-4. Shows the files & folders in the current directory ```ls```
-5. Stop Sass from watching ```ctrl-c```
+1. ```cd desktop/project-name``` - Change directory to desktop > folder
+2. ```cd project-name``` - If you're already on desktop, simply
+3. ```pwd``` - Shows you where you're at
+4. ```ls``` - Shows the files & folders in the current directory
+5. ```ctrl-c``` - Stop Sass from watching
 
 
 Step 3—
 
 Once you know you're in the correct location/file/directory of the project you're going to be working on - it's probably best to keep your CSS & Sass in separate folders. Therefore, we'll want to use the command ```sass --watch sass:css```. This is saying, _"Hey Sass, watch all the files in the 'Sass' folder for any changes and update the stylesheet in the 'CSS' folder."_ A few more tips include;
 
-1. Start watching & compiling Sass to CSS ```sass --watch sass:css```
-2. Compress and minify code by using ```sass --watch --style compressed sass:css```
-3. Compile an single file, ```sass --watch --style compressed file-name.sass:file-name.css```
+1. ```sass --watch sass:css``` - Start watching & compiling Sass to CSS 
+2. ```sass --watch --style compressed sass:css``` - Compress and minify code by using 
+3. ```sass --watch --style compressed file-name.sass:file-name.css``` - Compile a specific file only
+
+Step 4—
+Dw will ask you anytime a Sass file has been changed that _"The file has been modified outside of Dw would you like to update/save those changes"_ and you want to be sure to click ```yes``` so that it'll stop asking you.
+
+Lastly, here are a few general command tips to help you level up. Enjoy!
+
+1. ```shift+command+period``` - Shows files again? idrk
+2. ```cd ../``` or ```cd -``` - Go back to previous directory
+3. ```open file-name.html``` - Open that file in a browser. Cute, huh?
