@@ -1,0 +1,2 @@
+div{height:100px;width:100px;margin:4em auto}div span{display:block;height:100%;width:100%;border-radius:4px;background-color:#46b7d5}div:hover span{animation-name:scale-up;animation-duration:1s;animation-timing-function:cubic-bezier(.77, -0.33, .29, 1.37);animation-iteration-count:infinite}@keyframes scale-up{0%{transform:scale(0)}50%{transform:scale(2)}100%{transform:scale(0)}}
+/*# sourceMappingURL=ch-5.css.map */
