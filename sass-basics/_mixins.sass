@@ -1,0 +1,28 @@
+//button
+@mixin button
+  font-weight: 400
+  font-size: 12px
+  letter-spacing: 1.75px
+  text-transform: uppercase
+  text-decoration: none
+  padding: 14px 24px
+  border-radius: 50px
+  margin: 20px auto
+  text-align: center
+  transition: box-shadow .3s
+
+//color button
+@mixin button-blue
+  background-color: $blue
+  color: $white
+  box-shadow: 0 0 15px 0 rgba($blue,0.5)
+  &:hover
+    box-shadow: 0 0 15px 0 rgba($blue,1)
+
+//modualar button (can be any color now)
+@mixin button-color($bg, $text-color)
+  background-color: $bg
+  color: $text-color
+  box-shadow: 0 0 15px 0 rgba($bg,0.5)
+  &:hover
+    box-shadow: 0 0 15px 0 rgba($bg,1)
