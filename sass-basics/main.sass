@@ -1,17 +1,17 @@
-//importing sass assets
+//importing all other _partial sass files
 @import "variables.sass"
 @import "mixins.sass"
+@import "mediaqueries.sass"
+@import "functions.sass"
 
 //general page styles
 body
-  background-color: $bg
   font-family: 'Roboto', sans-serif
   color: $text-color
 
 .blog-entry
-  max-width: 500px
+  max-width: 785px
   margin: 0 auto
-  padding: 10px
   h1
     font-family: 'Cormorant Garamond', serif
     text-transform: uppercase
@@ -20,7 +20,6 @@ body
     line-height: 1
     color: $heading-text
     font-size: 6rem
-    margin: 0
   h2
     font-size: 1.25rem
     color: $blue
