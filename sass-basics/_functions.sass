@@ -1,0 +1,8 @@
+@function my-calculation-function($some-number, $another-number)
+  @return $some-number + $another-number
+
+.blog-entry
+  padding: 10px
+  @media (max-width: 630px)
+    //$some-number, $another-number
+    padding: my-calculation-function(20px, 25px)
