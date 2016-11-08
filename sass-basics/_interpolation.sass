@@ -1,0 +1,27 @@
+//Pernounced Enter-pa-lay-tion
+
+//"blue" replaces any instance where #{$color} is to be "blue"
+
+@mixin color_class($color)
+  .#{$color}.color
+    color: $color
+    background-image: url("images/#{$color}.jpg")
+    @if $color == red
+      border: 1px solid red
+
+@include color_class(blue)
+
+
+
+//Using @if, @else, and @else if
+//if width of box is gt 100px
+@mixin box($width)
+  @if $width > 100px
+    padding: 10px
+  @else if $width == 100px
+    padding: 20px
+  @else
+    padding: 0
+
+div
+  @include box(200)
