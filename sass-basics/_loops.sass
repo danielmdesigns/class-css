@@ -1,0 +1,15 @@
+body
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+.box
+  width: 100%
+  height: 10px
+
+@for $i from 1 through 100
+  .box:nth-child(#{$i})
+    background-color: darken(white, $i)
+
+@each $member in thom, jonny, phil
+  .bandmember.#{$member}
+    background: url("images/#{$member}.jpg")
